@@ -1,41 +1,34 @@
 # CIMP-L > Data
-#
-#
 
+# load dependencies
 import streamlit as st
 import pandas as pd
 import numpy as np
 
-#--- DATA ---#
-df_permittees = pd.read_excel(
+# load excel data
+xl_permittees = pd.read_excel(
     io='data.xlsx',
     engine='openpyxl',
     sheet_name='Permittees'
 )
-df_programs = pd.read_excel(
+xl_programs = pd.read_excel(
     io='data.xlsx',
     engine='openpyxl',
     sheet_name='Programs'
 )
 
-#--- CONTENT ---#
-st.markdown("# Data")
-st.dataframe(df_permittees)
-st.dataframe(df_programs)
-
-#--- SIDEBAR ---#
+# load sidebar
 st.sidebar.markdown("""
     # Filter by...     
                     """)
-st.sidebar.multiselect(
+permittee = st.sidebar.multiselect(
     "Permittee:",
-    options=df_permittees["Permittee"].unique()
+    options=xl_permittees["Permittee"].unique()
 )
-st.sidebar.multiselect(
+program = st.sidebar.multiselect(
     "Program:",
-    options=df_programs["Program"].unique()
+    options=xl_programs["Program"].unique()
 )
 
-#
-#
-# CIMP-L > Data
+#load markdown
+st.markdown("# Data")
