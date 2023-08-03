@@ -14,6 +14,8 @@ st.markdown(
 
     # What is CIMP-L?
     
+    CIMP-L (which stands for "CIMP-Library") is a collaborative web dashboard for interacting with CIMP data that uses simple Excel spreadsheets as its back-end.
+
     """
     )
 
