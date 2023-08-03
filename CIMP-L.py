@@ -9,6 +9,7 @@ import numpy as np
 st.set_page_config(page_title="CIMP-L",
                    page_icon=":bar_chart:")
 
+#--- CONTENT ---#
 st.markdown(    
     """
 
@@ -19,6 +20,7 @@ st.markdown(
     """
     )
 
+#--- SIDEBAR ---#
 st.sidebar.markdown("""
                     
     # CIMP-L
