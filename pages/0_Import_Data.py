@@ -6,6 +6,12 @@ import pandas as pd
 import numpy as np
 import tabula
 
+# page configuration
+st.set_page_config(
+        page_title="CIMP-L",
+        page_icon=":bar_chart"
+)
+
 # functions
 def extract_data(file):
     tables = tabula.read_pdf(file, pages='all', multiple_tables=True)
@@ -25,7 +31,8 @@ st.sidebar.markdown("""
 st.markdown("""
             
             # Import Data
-            Use this tool to extract data tables from PDF monitoring reports.
+            
+            ## Use this tool to extract data tables from PDF monitoring reports.
             
             """)
 
