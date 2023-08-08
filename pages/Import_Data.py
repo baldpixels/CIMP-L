@@ -22,7 +22,7 @@ st.sidebar.markdown("""
                     
     # CIMP-L
                     
-    ## Monitoring data made *simple.*
+    Monitoring data made *simple.*
                     
     """
     )
@@ -30,9 +30,9 @@ st.sidebar.markdown("""
 # load markdown
 st.markdown("""
             
-            # Import Data
+            # Extract Data
             
-            ## Use this tool to extract data tables from PDF monitoring reports.
+            ### Use this tool to extract data tables from PDF monitoring reports.
             
             """)
 
